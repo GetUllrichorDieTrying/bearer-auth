@@ -9,14 +9,14 @@ async function handleSignup(req, res, next) {
       user: userRecord,
       token: userRecord.token,
     };
-    res.status(200).json(output);
+    res.status(201).json(output);
   } catch (e) {
     console.error(e);
     next(e);
   }
 }
 
-async function handleSignin(req, res, next) {
+function handleSignin(req, res, next) {
   try {
     const user = {
       user: req.user,

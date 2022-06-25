@@ -5,7 +5,7 @@ const { Sequelize, DataTypes } = require('sequelize');
 const userSchema = require('./users.js');
 
 const DATABASE_URL =
-  process.env.NODE_ENV === 'test' ? 'sqlite::memory' : 'sqlite::memory';
+  process.env.NODE_ENV === 'test' ? 'sqlite::memory' : 'sqlite:memory';
 
 const DATABASE_CONFIG =
   process.env.NODE_ENV === 'production'
