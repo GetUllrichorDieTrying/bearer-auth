@@ -4,11 +4,13 @@ const { users } = require('../models/index.js');
 
 async function handleSignup(req, res, next) {
   try {
+    console.log(req.body);
     let userRecord = await users.create(req.body);
     const output = {
       user: userRecord,
       token: userRecord.token,
     };
+    // console.log(output);
     res.status(201).json(output);
   } catch (e) {
     console.error(e);
@@ -22,6 +24,7 @@ function handleSignin(req, res, next) {
       user: req.user,
       token: req.user.token,
     };
+    // console.log(req.user);
     res.status(200).json(user);
   } catch (e) {
     console.error(e);

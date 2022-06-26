@@ -9,7 +9,8 @@ const DATABASE_URL =
 
 const DATABASE_CONFIG =
   process.env.NODE_ENV === 'production'
-    ? {
+    ?
+    {
         dialectOptions: {
           ssl: {
             require: true,
