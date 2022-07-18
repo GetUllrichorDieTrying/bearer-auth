@@ -2,7 +2,7 @@
 
 ## Project Description
 
-Assignment Buster is a Slack App that helps students stay up-to-date with their coursework. Students are able to quickly access their Canvas assignments from the Assignment Buster App.
+Server Template with bearer auth.
 
 ## Deployments
 
